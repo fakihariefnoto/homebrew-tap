@@ -2,17 +2,17 @@ class Commitly < Formula
   desc "Compose Conventional Commits messages, interactively"
   homepage "https://github.com/fakihariefnoto/commitly"
   url "https://github.com/fakihariefnoto/commitly/releases/download/v0.1.0/commitly_0.1.0_darwin_arm64.tar.gz"
-  sha256 "1ccfba6190a298f969c04bb1b658a1a5330b5e6cb6bd96b9fc49f355cc8bd479"
+  sha256 "8fa32bd294d225fb04c5f284686a03b41f212287f9eca76a120b46455b90df72"
   license "MIT"
 
   on_arm do
     url "https://github.com/fakihariefnoto/commitly/releases/download/v0.1.0/commitly_0.1.0_darwin_arm64.tar.gz"
-    sha256 "1ccfba6190a298f969c04bb1b658a1a5330b5e6cb6bd96b9fc49f355cc8bd479"
+    sha256 "8fa32bd294d225fb04c5f284686a03b41f212287f9eca76a120b46455b90df72"
   end
 
   on_intel do
     url "https://github.com/fakihariefnoto/commitly/releases/download/v0.1.0/commitly_0.1.0_darwin_amd64.tar.gz"
-    sha256 "a389546b5f0db6e26063d9a76eb3d9edccbdfea3909cf1d7ea30b638742d05b3"
+    sha256 "4bc75bbfc1c529652c73f4b7157031f5d3440cacf2e1fb41574ba8fb1190d9e8"
   end
 
   def install
