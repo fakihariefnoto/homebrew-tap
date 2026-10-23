@@ -5,21 +5,21 @@
 class Omssh < Formula
   desc "Oh My SSH — a modern SSH/SFTP client for the terminal"
   homepage "https://github.com/fakihariefnoto/omssh"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.0/omssh_0.1.0_darwin_amd64.tar.gz"
-      sha256 "ee7964292e239b2d8fb522cd32743266fed920c499232ab8e59594d3003287b2"
+      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.1/omssh_0.1.1_darwin_amd64.tar.gz"
+      sha256 "fd385f995e61ca723866ea53b3d6d6a9a19c8ce17b66be192da17be3268b3daf"
 
       define_method(:install) do
         bin.install "omssh"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.0/omssh_0.1.0_darwin_arm64.tar.gz"
-      sha256 "66c65e48812af327754a17118c2a70911339175e09fd47528fe0bbcc5cfdbf96"
+      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.1/omssh_0.1.1_darwin_arm64.tar.gz"
+      sha256 "2f6740828a87b4d2be7fb907b24849a62cd29aa5665cb116b56ab32a24bd0e55"
 
       define_method(:install) do
         bin.install "omssh"
@@ -29,15 +29,15 @@ class Omssh < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.0/omssh_0.1.0_linux_amd64.tar.gz"
-      sha256 "eba9eaa769f6aa5242280a157cdf203464d9e486d3813762dc7736ee2f68d1a3"
+      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.1/omssh_0.1.1_linux_amd64.tar.gz"
+      sha256 "3322d0cd45cd041c43421b9f388edc2e5f21726b7ea9f0b91894d3080e799349"
       define_method(:install) do
         bin.install "omssh"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.0/omssh_0.1.0_linux_arm64.tar.gz"
-      sha256 "208f2778b57469479564dc3a75138707db387bc4b04da373452893a71282f6ae"
+      url "https://github.com/fakihariefnoto/omssh/releases/download/v0.1.1/omssh_0.1.1_linux_arm64.tar.gz"
+      sha256 "c77f9abf4ee6a4185c3760b0978db355cb890f787a12e2d29f60e26ed045ca29"
       define_method(:install) do
         bin.install "omssh"
       end
