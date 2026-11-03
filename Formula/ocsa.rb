@@ -5,21 +5,21 @@
 class Ocsa < Formula
   desc "Report on and reclaim the disk OpenCode's SQLite store uses"
   homepage "https://github.com/fakihariefnoto/ocsa"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.1/ocsa_0.1.1_darwin_amd64.tar.gz"
-      sha256 "6b6b51f2b0ea11e7c38264d1f204f8d6d94545df04fd638c977efa105c18e955"
+      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.2/ocsa_0.1.2_darwin_amd64.tar.gz"
+      sha256 "64dd251215631bea00cbf25d2b96dcf2bed298472e01f142aa1c1a4b9f8d373c"
 
       define_method(:install) do
         bin.install "ocsa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.1/ocsa_0.1.1_darwin_arm64.tar.gz"
-      sha256 "fe4efd41ef578c60d961d2fda89611a31b8581745d5ae591252af9a94d77860e"
+      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.2/ocsa_0.1.2_darwin_arm64.tar.gz"
+      sha256 "819bca2501c2f4a657bf32b3f6259c721198ebbaa4fca0f05855ae7b0af3bb19"
 
       define_method(:install) do
         bin.install "ocsa"
@@ -29,15 +29,15 @@ class Ocsa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.1/ocsa_0.1.1_linux_amd64.tar.gz"
-      sha256 "8faeb4e34f32fb77829509c517dab178498759133826717b1a41a9d8af313876"
+      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.2/ocsa_0.1.2_linux_amd64.tar.gz"
+      sha256 "989cbe1d2c32c988523be9251ae258706d3d8d1d6b6c54f8ced248654eeb9360"
       define_method(:install) do
         bin.install "ocsa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.1/ocsa_0.1.1_linux_arm64.tar.gz"
-      sha256 "baa960aa3c59eb6e079513f650fcee3f5a0de4456928333b9c24b65422c231d4"
+      url "https://github.com/fakihariefnoto/ocsa/releases/download/v0.1.2/ocsa_0.1.2_linux_arm64.tar.gz"
+      sha256 "91fa031f8e2c0833f0829161b0930667a6e2ed0911312770cb712907e3e3fa22"
       define_method(:install) do
         bin.install "ocsa"
       end
